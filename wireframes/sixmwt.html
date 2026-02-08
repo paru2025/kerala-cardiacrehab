@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ml">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>6-Minute Walk Test</title>
+<link rel="icon" type="image/svg+xml" href="assets/cardiosree_logo.svg">
+<style>
+body { font-family: Arial, sans-serif; background: #ffffff; color: #0b3b5a; margin: 0; padding: 24px; }
+h1 { font-size: 26px; color: #0b7a53; }
+label { display:block; font-size:18px; margin:12px 0 6px; }
+input, textarea { width:100%; padding:16px; font-size:18px; border:1px solid #cfe9db; border-radius:12px; }
+.row { display:grid; grid-template-columns: 1fr 1fr; gap:12px; }
+.btn { display:block; width:100%; padding:16px; margin-top:16px; background:#0b7a53; color:#fff; border-radius:12px; text-align:center; font-size:18px; text-decoration:none; }
+.danger { background:#e53935; }
+.note { margin-top:12px; font-size:16px; color:#555; }
+.brand { display:flex; align-items:center; gap:10px; margin-bottom:12px; }
+.brand img { height:40px; width:40px; }
+</style>
+</head>
+<body data-page="sixmwt">
+<div class="brand"><img src="assets/cardiosree_logo.svg" alt="CardioSree"><h1 style="margin:0">6-മിനിറ്റ് വോക്ക് ടെസ്റ്റ്</h1></div>
+<div class="row">
+  <div>
+    <label>പ്രീ HR</label>
+    <input id="preHr" type="number" placeholder="ഉദാ: 72">
+  </div>
+  <div>
+    <label>പ്രീ BP</label>
+    <input id="preBp" type="text" placeholder="ഉദാ: 128/78">
+  </div>
+</div>
+<label>ദൂരം (മീറ്റർ)</label>
+<input id="distance" type="number" placeholder="ഉദാ: 320">
+<div class="row">
+  <div>
+    <label>പോസ്റ്റ് HR</label>
+    <input id="postHr" type="number" placeholder="ഉദാ: 88">
+  </div>
+  <div>
+    <label>പോസ്റ്റ് BP</label>
+    <input id="postBp" type="text" placeholder="ഉദാ: 136/82">
+  </div>
+</div>
+<label>ലക്ഷണങ്ങൾ</label>
+<textarea id="symptoms" rows="3" placeholder="ചെസ്റ്റ് പെയിൻ/ഡിസിനസ്/ശ്വാസം കുറഞ്ഞു?"></textarea>
+<a id="saveSixmwt" class="btn" href="patient_home.html">സംരക്ഷിക്കുക</a>
+<a class="btn danger" href="patient_home.html">HELP NOW</a>
+<div class="note">സുരക്ഷ: ബുദ്ധിമുട്ടുണ്ടെങ്കിൽ ഉടൻ നിർത്തുക.</div>
+<script src="app.js"></script>
+</body>
+</html>

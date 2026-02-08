@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Admin Test Tools</title>
+<style>
+body { font-family: Arial, sans-serif; background: #ffffff; color: #0b3b5a; margin: 0; padding: 24px; }
+h1 { font-size: 26px; color: #0b7a53; }
+.card { background:#e7f6ef; padding:16px; border-radius:12px; margin-bottom:16px; }
+.btn { display:inline-block; padding:12px 16px; margin:8px 8px 0 0; background:#0b7a53; color:#fff; text-decoration:none; border-radius:12px; font-size:16px; }
+input { display:block; margin-top:8px; }
+</style>
+</head>
+<body data-page="admin_tools">
+<h1>Admin Test Tools</h1>
+<div class="card">
+  <div>Export Local Data</div>
+  <a id="exportData" class="btn" href="#">Export</a>
+</div>
+<div class="card">
+  <div>Import Local Data</div>
+  <input id="importFile" type="file" accept=".json">
+  <a id="importData" class="btn" href="#">Import</a>
+</div>
+<div class="card">
+  <div>Reset App (Clear Local Storage)</div>
+  <a id="resetApp" class="btn" href="#">Reset</a>
+</div>
+<div class="card">
+  <div>Seed Demo Cohort</div>
+  <a id="seedDemo" class="btn" href="#">Seed</a>
+</div>
+<a class="btn" href="admin_dashboard.html">Back to Dashboard</a>
+<script src="app.js"></script>
+</body>
+</html>

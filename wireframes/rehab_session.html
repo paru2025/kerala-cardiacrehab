@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ml">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rehab Session</title>
+<link rel="icon" type="image/svg+xml" href="assets/cardiosree_logo.svg">
+<style>
+body { font-family: Arial, sans-serif; background: #ffffff; color: #0b3b5a; margin: 0; padding: 24px; }
+h1 { font-size: 24px; color: #0b7a53; }
+.card { background:#e7f6ef; padding:16px; border-radius:12px; margin-bottom:16px; }
+.row { display:flex; gap:12px; }
+.btn { display:block; width:100%; padding:16px; margin-top:16px; background:#0b7a53; color:#fff; border-radius:12px; text-align:center; font-size:18px; text-decoration:none; }
+.danger { background:#e53935; }
+.label { font-size:18px; margin-top:8px; }
+select { width:100%; padding:16px; font-size:18px; border:1px solid #cfe9db; border-radius:12px; }
+.brand { display:flex; align-items:center; gap:10px; margin-bottom:12px; }
+.brand img { height:40px; width:40px; }
+</style>
+</head>
+<body data-page="rehab_session">
+<div class="brand"><img src="assets/cardiosree_logo.svg" alt="CardioSree"><h1 style="margin:0">ഇന്ന് Rehab</h1></div>
+<div id="walkCard" class="card">നടക്കൽ: —</div>
+<div id="breathCard" class="card">ശ്വാസ വ്യായാമം: —</div>
+<div id="yogaCard" class="card">യോഗ: —</div>
+<div class="card">
+<div class="label">RPE</div>
+<select id="rpe">
+  <option>9 വളരെ ലഘു</option>
+  <option>11 ലഘു</option>
+  <option>13 മിതം</option>
+  <option>15 കുറച്ച് കഠിനം</option>
+</select>
+</div>
+<a id="start" class="btn" href="patient_home.html">Start</a>
+<a id="complete" class="btn" href="patient_home.html">Complete</a>
+<a id="stop" class="btn danger" href="#">Stop (ചെസ്റ്റ് പെയിൻ/ഡിസിനസ്)</a>
+<a id="help" class="btn danger" href="patient_home.html">HELP NOW</a>
+</body>
+<script src="app.js"></script>
+</html>

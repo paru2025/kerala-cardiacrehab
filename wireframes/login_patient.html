@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ml">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Patient Login</title>
+<style>
+body { font-family: Arial, sans-serif; background: #ffffff; color: #0b3b5a; margin: 0; padding: 24px; }
+h1 { font-size: 26px; color: #0b7a53; }
+label { display: block; font-size: 18px; margin: 12px 0 6px; }
+input, select { width: 100%; padding: 16px; font-size: 18px; border: 1px solid #cfe9db; border-radius: 12px; }
+.btn { display: block; width: 100%; padding: 16px; margin-top: 16px; background: #0b7a53; color: #fff; border-radius: 12px; text-align: center; font-size: 18px; text-decoration: none; }
+.note { margin-top: 12px; font-size: 16px; color: #555; }
+</style>
+</head>
+<body data-page="login_patient">
+<h1>ലോഗിൻ</h1>
+<label>ഭാഷ</label>
+<select id="lang">
+  <option value="ml">മലയാളം</option>
+  <option value="en">English</option>
+</select>
+<label>മൊബൈൽ നമ്പർ (അനിവാര്യമാണ്)</label>
+<input id="mobile" type="tel" placeholder="Enter mobile" required>
+<a id="btnOtp" class="btn" href="services.html">Continue</a>
+<div class="note">ഈ ആപ്പ് മാർഗനിർദ്ദേശം മാത്രം. നിങ്ങളുടെ ഡോക്ടറുടെ ഉപദേശം സുപ്രധാനമാണ്.</div>
+<a class="btn" style="background:#e53935;margin-top:24px" href="patient_home.html">HELP NOW</a>
+</body>
+<script src="app.js"></script>
+</html>

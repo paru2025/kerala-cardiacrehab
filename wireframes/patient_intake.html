@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ml">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Patient Intake</title>
+<style>
+body { font-family: Arial, sans-serif; background: #ffffff; color: #0b3b5a; margin: 0; padding: 24px; }
+h1 { font-size: 26px; color: #0b7a53; }
+label { display:block; font-size:18px; margin:12px 0 6px; }
+input, select, textarea { width:100%; padding:16px; font-size:18px; border:1px solid #cfe9db; border-radius:12px; }
+.row { display:grid; grid-template-columns: 1fr 1fr; gap:12px; }
+.btn { display:block; width:100%; padding:16px; margin-top:16px; background:#0b7a53; color:#fff; border-radius:12px; text-align:center; font-size:18px; text-decoration:none; }
+.note { margin-top:12px; font-size:16px; color:#555; }
+.risk { background:#e7f6ef; padding:12px; border-radius:12px; margin-top:12px; font-size:18px; }
+</style>
+</head>
+<body data-page="patient_intake">
+<h1>പേഷ്യന്റ് ഇൻടേക്ക്</h1>
+<label>പേര്</label>
+<input id="name" type="text" placeholder="പേഷ്യന്റ് പേര്">
+<label>ഡിസ്ചാർജ് സമ്മറി അപ്‌ലോഡ്</label>
+<input id="discharge" type="file" accept=".pdf,.jpg,.jpeg,.png">
+<a id="saveIntake" class="btn" href="paywall.html">സംരക്ഷിച്ച് തുടരുക</a>
+<div class="note">മെഡിക്കൽ വിവരങ്ങൾ കോച്ച് ചേർക്കും. നിങ്ങൾ ഡിസ്ചാർജ് അപ്‌ലോഡ് ചെയ്യുക.</div>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Create Admin</title>
+<style>
+body { font-family: Arial, sans-serif; background: #ffffff; color: #0b3b5a; margin: 0; padding: 24px; }
+h1 { font-size: 26px; color: #0b7a53; }
+label { display: block; font-size: 18px; margin: 12px 0 6px; }
+input { width: 100%; padding: 16px; font-size: 18px; border: 1px solid #cfe9db; border-radius: 12px; }
+.btn { display: block; width: 100%; padding: 16px; margin-top: 16px; background: #0b7a53; color: #fff; border-radius: 12px; text-align: center; font-size: 18px; text-decoration: none; }
+.note { margin-top: 12px; font-size: 16px; color: #555; }
+</style>
+</head>
+<body data-page="admin_setup">
+<h1>Create Admin</h1>
+<label>Email</label>
+<input id="adminCreateEmail" type="email" placeholder="admin@example.com">
+<label>Password</label>
+<input id="adminCreatePassword" type="password" placeholder="Set a password">
+<label>WhatsApp Number</label>
+<input id="adminCreateWa" type="tel" placeholder="e.g., 91XXXXXXXXXX">
+<a id="adminCreateBtn" class="btn" href="admin_dashboard.html">Create Admin</a>
+<a class="btn" style="background:#0b3b5a" href="login_admin.html">Back to Login</a>
+<div class="note">This stores admin credentials locally.</div>
+<script src="app.js"></script>
+</body>
+</html>

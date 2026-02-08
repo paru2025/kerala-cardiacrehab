@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coach Dashboard</title>
+<link rel="icon" type="image/svg+xml" href="assets/cardiosree_logo.svg">
+<style>
+body { font-family: Arial, sans-serif; background: #ffffff; color: #0b3b5a; margin: 0; padding: 24px; }
+h1 { font-size: 26px; color: #0b7a53; }
+.card { background:#e7f6ef; padding:16px; border-radius:12px; margin-bottom:16px; }
+table { width:100%; border-collapse: collapse; margin-top: 16px; }
+th, td { border:1px solid #cfe9db; padding:12px; font-size:16px; }
+.btn { padding:8px 12px; background:#0b7a53; color:#fff; border-radius:8px; text-decoration:none; }
+.brand { display:flex; align-items:center; gap:10px; margin-bottom:12px; }
+.brand img { height:40px; width:40px; }
+</style>
+</head>
+<body data-page="coach_dashboard">
+<div class="brand"><img src="assets/cardiosree_logo.svg" alt="CardioSree"><h1 style="margin:0">Assigned Patients</h1></div>
+<div class="card">Coach: <span id="coachName"></span></div>
+<table>
+  <thead>
+    <tr><th>Patient</th><th>Procedure</th><th>Date</th><th>Risk</th><th>Discharge Summary</th><th>Summary</th></tr>
+  </thead>
+  <tbody id="coachBody"></tbody>
+</table>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ml">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Patient Home</title>
+<link rel="icon" type="image/svg+xml" href="assets/cardiosree_logo.svg">
+<style>
+body { font-family: Arial, sans-serif; background: #ffffff; color: #0b3b5a; margin: 0; padding: 24px; }
+.top { display:flex; justify-content:space-between; align-items:center; }
+.score { font-size:22px; background:#e7f6ef; padding:12px 16px; border-radius:12px; color:#0b7a53; }
+.help { background:#e53935; color:#fff; padding:12px 16px; border-radius:12px; text-decoration:none; font-size:18px; }
+.coach { margin-top:12px; font-size:18px; background:#e7f6ef; padding:12px; border-radius:12px; }
+.tiles { display:grid; grid-template-columns: 1fr 1fr; gap:12px; margin-top:16px; }
+.tile { background:#f4fbf7; border:1px solid #cfe9db; border-radius:12px; padding:16px; font-size:18px; }
+.btn { display:block; width:100%; padding:16px; margin-top:16px; background:#0b7a53; color:#fff; border-radius:12px; text-align:center; font-size:18px; text-decoration:none; }
+.nav { position:fixed; bottom:0; left:0; right:0; display:flex; gap:8px; padding:12px; background:#ffffff; border-top:1px solid #cfe9db; }
+.nav a { flex:1; text-align:center; padding:12px; background:#e7f6ef; border-radius:8px; color:#0b3b5a; text-decoration:none; font-size:16px; }
+.brand { display:flex; align-items:center; gap:10px; margin-bottom:12px; }
+.brand img { height:40px; width:40px; }
+</style>
+</head>
+<body data-page="patient_home">
+<div class="brand"><img src="assets/cardiosree_logo.svg" alt="CardioSree"><div style="font-weight:bold;color:#0b7a53">CardioSree</div></div>
+<div class="top">
+  <div id="score" class="score">ഇന്ന് ഹാർട്ട് സ്കോർ: —</div>
+  <a id="help" class="help" href="#">HELP NOW</a>
+</div>
+<div class="tiles">
+  <div id="bp" class="tile">BP: --/--</div>
+  <div id="hr" class="tile">HR: --</div>
+  <div id="steps" class="tile">Steps: --</div>
+  <div id="weight" class="tile">Weight: --</div>
+  <div id="sixmwtLast" class="tile">6MWT: —</div>
+</div>
+<div id="coachInfo" class="coach">കോച്ച്: —</div>
+<a id="startRehab" class="btn" href="rehab_session.html">ഇന്ന് Rehab ആരംഭിക്കുക</a>
+<a id="sixmwtBtn" class="btn" href="sixmwt.html">6-മിനിറ്റ് വോക്ക് ടെസ്റ്റ്</a>
+<a id="subscriptionStatus" class="btn" href="paywall.html">Subscription Status</a>
+<div class="nav">
+  <a href="patient_home.html">Home</a>
+  <a href="rehab_session.html">Rehab</a>
+  <a href="paywall.html">Payments</a>
+  <a href="patient_details.html">Details</a>
+</div>
+</body>
+<script src="app.js"></script>
+</html>

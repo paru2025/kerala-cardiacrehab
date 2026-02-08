@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coach Edit Patient Details</title>
+<link rel="icon" type="image/svg+xml" href="assets/cardiosree_logo.svg">
+<style>
+body { font-family: Arial, sans-serif; background: #ffffff; color: #0b3b5a; margin: 0; padding: 24px; }
+h1 { font-size: 26px; color: #0b7a53; }
+label { display:block; font-size:18px; margin:12px 0 6px; }
+input, select { width:100%; padding:16px; font-size:18px; border:1px solid #cfe9db; border-radius:12px; }
+.btn { display:inline-block; padding:12px 16px; margin-top:12px; background:#0b7a53; color:#fff; border-radius:12px; text-decoration:none; }
+.brand { display:flex; align-items:center; gap:10px; margin-bottom:12px; }
+.brand img { height:40px; width:40px; }
+</style>
+</head>
+<body data-page="coach_edit">
+<div class="brand"><img src="assets/cardiosree_logo.svg" alt="CardioSree"><h1 style="margin:0">Edit Patient Details</h1></div>
+<div id="wrap">
+  <div><b>Patient:</b> <span id="patientId"></span></div>
+  <label>Surgery / Procedure</label>
+  <select id="surgery">
+    <option value="">Select</option>
+    <option value="pci">Angioplasty (PCI)</option>
+    <option value="cabg">Bypass (CABG)</option>
+    <option value="valve">Valve Surgery</option>
+    <option value="other">Other</option>
+  </select>
+  <label>Date</label>
+  <input id="procedureDate" type="date">
+  <label>Hospital</label>
+  <input id="hospital" type="text" placeholder="Hospital">
+  <label>Doctor Name</label>
+  <input id="doctor" type="text" placeholder="Doctor">
+  <a id="saveEdit" class="btn" href="coach_dashboard.html">Save</a>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Admin Payments</title>
+<style>
+body { font-family: Arial, sans-serif; background: #ffffff; color: #0b3b5a; margin: 0; padding: 24px; }
+h1 { font-size: 26px; color: #0b7a53; }
+table { width:100%; border-collapse: collapse; margin-top: 16px; }
+th, td { border:1px solid #cfe9db; padding:12px; font-size:16px; }
+.btn { padding:8px 12px; background:#0b7a53; color:#fff; border-radius:8px; text-decoration:none; }
+.back { display:inline-block; margin-top:16px; padding:12px 16px; background:#0b3b5a; color:#fff; text-decoration:none; border-radius:12px; }
+</style>
+</head>
+<body data-page="admin_payments">
+<h1>Payments Reconciliation</h1>
+<table>
+  <thead>
+    <tr><th>User</th><th>UPI ID</th><th>Amount</th><th>UTR/Ref</th><th>Status</th><th>Action</th><th>WhatsApp</th></tr>
+  </thead>
+  <tbody id="paymentsBody">
+  </tbody>
+</table>
+<a class="back" href="admin_dashboard.html">Back</a>
+</body>
+<script src="app.js"></script>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ml">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UPI Payment</title>
+<style>
+body { font-family: Arial, sans-serif; background: #ffffff; color: #0b3b5a; margin: 0; padding: 24px; }
+h1 { font-size: 26px; color: #0b7a53; }
+.box { background:#e7f6ef; padding:16px; border-radius:12px; margin-bottom:16px; }
+label { display:block; font-size:18px; margin:12px 0 6px; }
+input { width:100%; padding:16px; font-size:18px; border:1px solid #cfe9db; border-radius:12px; }
+.btn { display:block; width:100%; padding:16px; margin-top:16px; background:#0b7a53; color:#fff; border-radius:12px; text-align:center; font-size:18px; text-decoration:none; }
+.alt { background:#0b3b5a; }
+.status { margin-top:16px; font-size:18px; color:#555; }
+.row { display:grid; grid-template-columns: 1fr 1fr; gap:12px; }
+</style>
+</head>
+<body data-page="payment">
+<h1>UPI വഴി പേയ്‌മെന്റ്</h1>
+<div class="box">
+  <div class="row">
+    <div>UPI ID: <span id="upiId">cardio@sbi</span></div>
+    <div style="text-align:right"><a id="copyUpi" href="#" class="btn" style="display:inline-block;padding:8px 12px;font-size:16px">Copy</a></div>
+  </div>
+  <div>തുക: ₹1000</div>
+</div>
+<a id="openUpi" class="btn" href="#">UPI ആപ്പ് തുറക്കുക (Tap to Pay)</a>
+<label>പേയ്മെന്റ് റെഫറൻസ് / UTR (അവസാന 4 അക്കങ്ങൾ)</label>
+<input id="utr" type="text" placeholder="ഉദാ: 4 അക്കങ്ങൾ">
+<label>പേയർ നെയിം</label>
+<input id="payer" type="text" placeholder="പേരിന്റെ ആദ്യഭാഗം">
+<a id="verifyPending" class="btn alt" href="patient_home.html">Verify Pending</a>
+<div class="status">സ്ഥിതി: പരിശോധനയ്ക്ക് കാത്തിരിക്കുന്നു. അഡ്മിൻ സ്ഥിരീകരിച്ചാൽ പ്രീമിയം അൺലോക്ക് ചെയ്യും.</div>
+<a class="btn" style="background:#e53935;margin-top:24px" href="patient_home.html">HELP NOW</a>
+</body>
+<script src="app.js"></script>
+</html>

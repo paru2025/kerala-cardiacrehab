@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Admin Dashboard</title>
+<link rel="icon" type="image/svg+xml" href="assets/cardiosree_logo.svg">
+<style>
+body { font-family: Arial, sans-serif; background: #ffffff; color: #0b3b5a; margin: 0; padding: 24px; }
+h1 { font-size: 26px; color: #0b7a53; }
+.card { background:#e7f6ef; padding:16px; border-radius:12px; margin-bottom:16px; }
+a { display:inline-block; padding:12px 16px; margin:8px 8px 0 0; background:#0b7a53; color:#fff; text-decoration:none; border-radius:12px; font-size:16px; }
+.brand { display:flex; align-items:center; gap:10px; margin-bottom:12px; }
+.brand img { height:40px; width:40px; }
+</style>
+</head>
+<body data-page="admin_dashboard">
+<div class="brand"><img src="assets/cardiosree_logo.svg" alt="CardioSree"><h1 style="margin:0">Admin Dashboard</h1></div>
+<div class="card">New Users: 12</div>
+<div id="pendingCount" class="card">Pending Payments: 0</div>
+<div id="notifyCount" class="card">WhatsApp Notifications Pending: 0</div>
+<a id="notifyOpen" href="#" style="display:inline-block">Open WhatsApp for latest</a>
+<div class="card">Alerts (High BP): 3</div>
+<div class="card">
+  <div style="font-weight:bold;margin-bottom:8px">Payment QR (Global)</div>
+  <img id="qrPreviewAdmin" alt="UPI QR" style="max-width:240px; border-radius:12px; display:none">
+  <input id="qrUploadAdmin" type="file" accept=".jpg,.jpeg,.png,.svg">
+  <a id="saveQrAdmin" class="btn" href="#">Save QR</a>
+</div>
+<div class="card">
+  <div style="font-weight:bold;margin-bottom:8px">Admin Rights</div>
+  <ul style="margin:0 0 0 20px">
+    <li>Verify payments and activate subscriptions</li>
+    <li>Open WhatsApp notifications to confirm payments</li>
+    <li>Upload and manage global UPI QR image</li>
+    <li>Assign patients to coaches</li>
+    <li>View discharge summaries and patient intake</li>
+    <li>See safety alerts and counts</li>
+  </ul>
+</div>
+<a href="admin_payments.html">Manage Payments</a>
+<a href="admin_assign.html">Assign Coach</a>
+<a href="admin_test_tools.html">Test Tools</a>
+<a href="index.html">Back to Wireframes</a>
+</body>
+<script src="app.js"></script>
+</html>
